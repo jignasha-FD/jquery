@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../01Darkmode/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-wrapper">
+        <div class="sidebar1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          nobis nostrum vel accusantium ipsa corporis iste similique nulla ea
+          aut.
+        </div>
+        <div class="navbar">
+          <nav>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>MENU</li>
+          </nav>
+          <div class="content1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              ex error, impedit necessitatibus excepturi aperiam!
+            </p>
+            <button class="darkmode">Darkmode</button>
+          </div>
+          <div class="content1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              ex error, impedit necessitatibus excepturi aperiam!
+            </p>
+            <button class="lightmode">lightmode</button>
+          </div>
+          <div class="content1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              ex error, impedit necessitatibus excepturi aperiam!
+            </p>
+          </div>
+        </div>
+        <div class="sidebar2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum
+          eum tempore iure eligendi laboriosam rerum soluta illo veritatis
+          ipsam.
+        </div>
+      </div>
+    </header>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".darkmode").click(function () {
+          $(".content1").toggleClass("add-class");
+        });
+      });
+    </script>
+  </body>
+</html>

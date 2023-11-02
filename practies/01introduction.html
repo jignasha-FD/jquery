@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>introduction jquery</title>
+  </head>
+  <body>
+    <h1>Introduction jquery</h1>
+    <p class="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere itaque
+      aspernatur expedita adipisci cupiditate ab optio dolorum est incidunt
+      debitis?
+    </p>
+    <p id="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere itaque
+      aspernatur expedita adipisci cupiditate ab optio dolorum est incidunt
+      debitis?
+    </p>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      console.log($);
+      console.log(jQuery);
+
+      $("h1").click(function () {
+        $(".para").css("color", "pink");
+        $("#para").css("color", "blue");
+      });
+    </script>
+  </body>
+</html>
